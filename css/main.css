@@ -83,30 +83,33 @@ body {
   font-size: 2em; 
   border-left: solid 1px rgb(160, 160, 160);
 }
-div.main-container {
-  width: 100%;  
-  float:left;
-}
 .intro {
   background: url('../images/linkedincover.png') no-repeat center center;
   background-color: #f4f4f4;
   padding-left: 20%;
-  height: 250px;
+  height: 270px;
+}
+div.main-container {
+  width: 100%; 
+  background: #f4f4f4; 
 }
 div.article-container {
-  padding: 10px 10px 5px 10px;
   float: right;
-  background: #f4f4f4;
-  border: solid 1px rgba(160, 160, 160);
-  margin: 0 0 10px 0;
-  position: relative; 
+  width: 60%;
 }
 div.aside-container {
   float: left;
-  background-color: red;
-  width: 33%;
-  height: 300px;
+  width: 30%;
 }
+div.article-container , .aside-container {
+  padding: 10px 15px;
+  margin: 5px 15px;
+  background-color: #fff;
+  border: solid 1px rgb(160, 160, 160);
+  height: 300px;
+  position: relative; 
+}
+
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
