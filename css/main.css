@@ -103,7 +103,7 @@ div.aside-container {
 }
 div.article-container , .aside-container {
   padding: 10px 15px;
-  margin: 5px 15px;
+  margin: 5px 25px;
   background-color: #fff;
   border: solid 1px rgb(160, 160, 160);
   height: 300px;
