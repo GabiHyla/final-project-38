@@ -31,10 +31,10 @@ body {
   margin: 0 auto;
 }
 .site-header {
-    background-color: #ffffff;
-    border-bottom: solid 1px rgb(160, 160, 160);
-    top: 0;
-    width: 100%;
+  background-color: white;
+  float:left;
+  top: 0;
+  width: 100%;
 }
 .site-header a {
   text-decoration: none;
@@ -43,22 +43,44 @@ body {
   margin:0;
   padding: 0 0 0 1.5em;
 }
+@media screen and (max-width:390px) {
+  .site-header h1 {
+    width:80%;
+  }
+}
 .site-header h1 a {
   display: inline-block;
   float: left;
+  position: relative;
   font-family: "Raleway", Helvetica, sans-serif;
   color: #000;
   padding: 10px 10px 10px 0;
   line-height: 2;
 }
 .site-nav {
-  float: left;
+  float: right;
+}
+.site-nav {
+  float:left;
+}
+@media screen and (max-width:675px) {
+  .site-nav {
+    float:left;
+  }
+  .site-nav ul {
+    padding:0;
+  }
+}
+@media screen and (max-width:640px) {
+  .site-nav ul {
+    display: none;
+  }
 }
 .site-nav ul {
   margin: 0;
   padding: 0;
   line-height: 5em;
-  float:  right;
+  float: left;
   list-style: none;
 }
 .site-nav ul li {
@@ -68,7 +90,12 @@ body {
   margin-left: 1em;
   padding-left: 1em;
 }
-
+@media screen and (max-width: 640px) {
+  .site-nav li {
+    display:block;
+    margin:0.25em 0;
+  }
+}
 .site-nav ul li a {
   border-bottom: 0;
   font-family: "Raleway", Helvetica, sans-serif;
@@ -78,19 +105,42 @@ body {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
-.hamburger {
+.nav-icon,
+.nav-icon: before,
+.nav-icon: after {
+  content:"";
+  position: absolute;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+}
+.nav-icon {
   float: right;
   padding: 22px;
+  position: absolute;
+  right: 0;
   line-height: 1em;
-  color: #aaaaaa;
+  color: #000;
   font-size: 2em; 
-  border-left: solid 1px rgb(160, 160, 160);
 }
-.intro {
+@media screen and (max-width: 640px) {
+  .nav-icon { display:block; }
+}
+.nav-icon:before {
+  direction: block;
+  top: 0.25em;
+  right: 0;
+}
+.nav-icon:after {
+  display: block;
+  top: 0.75em;
+  right: 0;
+}
+section.intro {
   background: url('../images/linkedincover.png') no-repeat center center;
   background-color: #f4f4f4;
   padding-left: 20%;
-  height: 270px;
+  height: 390px;
 }
 div.main-container {
   width: 100%; 
@@ -114,51 +164,41 @@ div.article-container , .aside-container {
   position: relative; 
 }
 .popular-posts h1 a {
-font-size: 1.5em;
-border-bottom: solid 1px rgb(160, 160, 160);
+  font-size: 1.5em;
+  border-bottom: solid 1px rgb(160, 160, 160);
 }
 .popular-posts h1, h2, a {
-font-family: 'Raleway', sans-serif;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 0.9em;
-color: #A9A9A9;
-letter-spacing: 0.25em;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #A9A9A9;
+  letter-spacing: 0.25em;
 }
 .title h2 a {
- font-family: 'Raleway', sans-serif;
- text-decoration: none;
- text-transform: uppercase;
- font-size: 0.9em;
- color: #A9A9A9;
- letter-spacing: 0.25em;
- border-bottom: solid 1px rgb(160, 160, 160);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #A9A9A9;
+  letter-spacing: 0.25em;
+  border-bottom: solid 1px rgb(160, 160, 160);
 }
 .title img {
   float: right;
+  max-width: 100%;
+}
+.site-footer {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: solid 1px rgb(160, 160, 160);
 }
 
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
-
-/* add type styles here */
-
-
-.site-container {
-max-width: 960px;
-margin: 0 auto;
-}
-
-.site-header {
-
-}
-.site-content {
-
-}
-.site-footer {
-
-}
 
 /******************************************
 /* HELPER CLASSES
