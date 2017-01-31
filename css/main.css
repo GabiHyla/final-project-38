@@ -103,6 +103,7 @@ div.article-container {
 div.aside-container {
   float: left;
   width: 30%;
+  height: 1200px;
 }
 div.article-container , .aside-container {
   padding: 10px 15px;
@@ -111,6 +112,18 @@ div.article-container , .aside-container {
   border: solid 1px rgb(160, 160, 160);
   height: 300px;
   position: relative; 
+}
+.popular-posts h1 a {
+font-size: 1.5em;
+border-bottom: solid 1px rgb(160, 160, 160);
+}
+.popular-posts h1, h2, a {
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 0.9em;
+color: #A9A9A9;
+letter-spacing: 0.25em;
 }
 .title h2 a {
  font-family: 'Raleway', sans-serif;
