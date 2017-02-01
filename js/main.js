@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(window).on('resize', function(){
 		var windowWidth = $(window).width();
 		
-		if (windowWidth > 640) {
+		if (windowWidth > 1200) {
 			$('.site-nav ul').show();
 		} else {
 			$('.site-nav ul').hide();
