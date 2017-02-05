@@ -209,7 +209,106 @@ div.article-container , .aside-container {
   border: solid 1px rgb(160, 160, 160);
 }
 /* SOCIAL MEDIA LINKS*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+    background: #EEEDE2;
+}
+ul.social-icons a {
+  text-decoration: none;
+  color: #bfbab2;
+  font-size: 2rem;
+}
+p > a:hover{
+    color: #bfbab2;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
 
+ul {
+
+    list-style: none;
+}
+.footer-social-icons {
+    width: 450px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+
+  margin: 0.5rem;
+}
+.social-icons a {
+    color: #bfbab2;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(255,255,255,0.0);
+}
+.fa-facebook:hover {
+  color: #fff;
+    background-color: #3d5b99;
+
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+rgba(255,255,255,0.0);
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+    color: #fff;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+rgba(255,255,255,0.0);
+}
+.fa-instagram:hover {
+    background-color: #3f729b;
+  color: #fff;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+rgba(255,255,255,0.0);
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+    color: #fff;
+}
 
 /******************************************
 /* TYPOGRAPHY
